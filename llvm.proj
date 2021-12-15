@@ -51,6 +51,11 @@
     <_LLVMBuildArgs Condition="'$(TargetArchitecture)' == 'arm' or '$(TargetArchitecture)' == 'arm64'" Include="-DCMAKE_CROSSCOMPILING:BOOL=ON" />
     <_LLVMBuildArgs Condition="'$(LLVMTableGenPath)' != ''" Include='-DLLVM_TABLEGEN="$(LLVMTableGenPath)"' />
     <_LLVMBuildArgs Include="-DCMAKE_BUILD_TYPE=$(Configuration)" />
+    <_LLVMBuildArgs Include='-DLLVM_ENABLE_PROJECTS=clang' />
+    <_LLVMBuildArgs Include='-DCLANG_BUILD_TOOLS:BOOL=OFF' />
+    <_LLVMBuildArgs Include='-DCLANG_INCLUDE_TESTS:BOOL=OFF' />
+    <_LLVMBuildArgs Include='-DCLANG_ENABLE_ARCMT:BOOL=OFF' />
+    <_LLVMBuildArgs Include='-DCLANG_ENABLE_STATIC_ANALYZER:BOOL=OFF' />
     <_LLVMBuildArgs Include="-DLLVM_BUILD_LLVM_C_DYLIB:BOOL=OFF" />
     <_LLVMBuildArgs Include="-DLLVM_ENABLE_DIA_SDK:BOOL=OFF" />
     <_LLVMBuildArgs Include="-DLLVM_INCLUDE_TESTS:BOOL=OFF" />
@@ -60,7 +65,6 @@
     <_LLVMBuildArgs Include='-DLLVM_INCLUDE_EXAMPLES:BOOL=OFF' />
     <_LLVMBuildArgs Include='-DLLVM_TOOLS_TO_BUILD="opt%3Bllc%3Bllvm-config%3Bllvm-dis%3Bllvm-mc%3Bllvm-as"' />
     <_LLVMBuildArgs Include='-DLLVM_ENABLE_LIBXML2:BOOL=OFF' />
-    <_LLVMBuildArgs Include='-DLLVM_ENABLE_PROJECTS=clang' />
     <_LLVMBuildArgs Include='-DLLVM_ENABLE_TERMINFO:BOOL=OFF' />
     <_LLVMBuildArgs Include='-DLLVM_EXTERNALIZE_DEBUGINFO:BOOL=ON' />
     <_LLVMBuildArgs Include='-DLLVM_EXTERNALIZE_DEBUGINFO_INSTALL:BOOL=ON' />
