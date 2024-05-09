@@ -2631,15 +2631,9 @@ void AsmPrinter::SetupMachineFunction(MachineFunction &MF) {
   bool NeedsLocalForSize = MAI->needsLocalForSize();
   if (F.hasFnAttribute("patchable-function-entry") ||
       F.hasFnAttribute("function-instrument") ||
-<<<<<<< HEAD
       F.hasFnAttribute("xray-instruction-threshold") || needFuncLabels(MF) ||
       NeedsLocalForSize || MF.getTarget().Options.EmitStackSizeSection ||
-      MF.getTarget().Options.BBAddrMap || MF.hasBBLabels()) {
-=======
-      F.hasFnAttribute("xray-instruction-threshold") ||
-      needFuncLabels(MF) || NeedsLocalForSize ||
-      MF.getTarget().Options.EmitStackSizeSection || MF.hasBBLabels() || EnableMonoEH) {
->>>>>>> 45c8c03535cc (Add support for emitting mono specific EH tables (#430))
+      MF.getTarget().Options.BBAddrMap || MF.hasBBLabels()  || EnableMonoEH) {
     CurrentFnBegin = createTempSymbol("func_begin");
     if (NeedsLocalForSize)
       CurrentFnSymForSize = CurrentFnBegin;
