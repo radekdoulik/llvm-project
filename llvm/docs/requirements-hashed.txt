@@ -139,13 +139,6 @@ imagesize==1.4.1 \
 jinja2==3.1.2 \
     --hash=sha256:31351a702a408a9e7595a8fc6150fc3f43bb6bf7e319770cbc0db9df9437e852 \
     --hash=sha256:6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61
-    # via
-    #   myst-parser
-    #   sphinx
-markdown==3.5.1 \
-    --hash=sha256:5874b47d4ee3f0b14d764324d2c94c03ea66bee56f2d929da9f2508d65e722dc \
-    --hash=sha256:b65d7beb248dc22f2e8a31fb706d93798093c308dc1aba295aedeb9d41a813bd
-    # via sphinx-markdown-tables
 markdown-it-py==3.0.0 \
     --hash=sha256:355216845c60bd96232cd8d8c40e8f9765cc86f46880e43a8fd22dc1a1a8cab1 \
     --hash=sha256:e3f60a94fa066dc52ec76661e37c851cb232d92f9886b15cb560aaada2df8feb
@@ -329,10 +322,6 @@ sphinx-basic-ng==1.0.0b2 \
 sphinx-bootstrap-theme==0.8.1 \
     --hash=sha256:683e3b735448dadd0149f76edecf95ff4bd9157787e9e77e0d048ca6f1d680df \
     --hash=sha256:6ef36206c211846ea6cbdb45bc85645578e7c62d0a883361181708f8b6ea743b
-    # via -r requirements.txt
-sphinx-markdown-tables==0.0.17 \
-    --hash=sha256:2bd0c30779653e4dd120300cbd9ca412c480738cc2241f6dea477a883f299e04 \
-    --hash=sha256:6bc6d3d400eaccfeebd288446bc08dd83083367c58b85d40fe6c12d77ef592f1
     # via -r requirements.txt
 sphinxcontrib-applehelp==1.0.4 \
     --hash=sha256:29d341f67fb0f6f586b23ad80e072c8e6ad0b48417db2bde114a4c9746feb228 \
