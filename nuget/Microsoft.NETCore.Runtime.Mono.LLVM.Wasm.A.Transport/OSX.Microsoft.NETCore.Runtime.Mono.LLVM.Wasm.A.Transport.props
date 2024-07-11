@@ -19,6 +19,5 @@
     <File Include="$(_LLVMInstallDir)\bin\lld.dwarf" TargetPath="tools\$(PackageTargetRuntime)\bin\" />
     <File Include="$(_LLVMInstallDir)\bin\lld-link" TargetPath="tools\$(PackageTargetRuntime)\bin\" />
     <File Include="$(_LLVMInstallDir)\bin\wasm-ld" TargetPath="tools\$(PackageTargetRuntime)\bin\" />
-    <File Include="$(_LibCxxInstallDir)\lib\libunwind.dylib" TargetPath="tools\$(PackageTargetRuntime)\lib\" />
   </ItemGroup>
 </Project>
