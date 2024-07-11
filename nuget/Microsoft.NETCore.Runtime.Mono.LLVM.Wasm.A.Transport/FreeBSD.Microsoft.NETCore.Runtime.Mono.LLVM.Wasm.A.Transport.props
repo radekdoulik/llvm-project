@@ -19,5 +19,6 @@
     <File Include="$(_LLVMInstallDir)\bin\lld.dbg" TargetPath="tools\$(PackageTargetRuntime)\bin\" />
     <File Include="$(_LLVMInstallDir)\bin\lld-link" TargetPath="tools\$(PackageTargetRuntime)\bin\" />
     <File Include="$(_LLVMInstallDir)\bin\wasm-ld" TargetPath="tools\$(PackageTargetRuntime)\bin\" />
+    <File Include="$(_LibCxxInstallDir)\lib\libunwind.so.1" TargetPath="tools\$(PackageTargetRuntime)\lib\" />
   </ItemGroup>
 </Project>

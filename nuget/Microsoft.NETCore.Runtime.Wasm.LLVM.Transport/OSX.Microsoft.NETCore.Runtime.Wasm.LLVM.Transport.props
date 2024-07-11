@@ -34,5 +34,6 @@
     <File Include="$(_LLVMInstallDir)\bin\llvm-symbolizer.dwarf" TargetPath="tools\$(PackageTargetRuntime)\bin\" />
     <File Include="$(_LLVMInstallDir)\bin\wasm-ld" TargetPath="tools\$(PackageTargetRuntime)\bin\" />
     <File Include="$(_LLVMInstallDir)\lib\clang\$(LLVMVersionShort)\include\**" TargetPath="tools\$(PackageTargetRuntime)\lib\clang\$(LLVMVersionShort)\include\%(RecursiveDir)\" />
+    <File Include="$(_LibCxxInstallDir)\lib\libunwind.dylib" TargetPath="tools\$(PackageTargetRuntime)\lib\" />
   </ItemGroup>
 </Project>
