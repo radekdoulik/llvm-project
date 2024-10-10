@@ -3,6 +3,6 @@
   <ItemGroup>
     <File Include="$(ProjectDir)\clang\bindings\python\clang\**" TargetPath="tools\bindings\python\clang" />
     <File Include="$(_LLVMInstallDir)\lib\libclang.dylib" TargetPath="tools\libclang.dylib" />
-    <File Include="$(_LLVMInstallDir)\lib\clang\**\include\*" TargetPath="tools\include" />
+    <File Include="$(_LLVMInstallDir)\lib\clang\$(LLVMVersionShort)\include\**" TargetPath="tools\include\%(RecursiveDir)" />
   </ItemGroup>
 </Project>
