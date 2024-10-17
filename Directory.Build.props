@@ -5,6 +5,6 @@
 
   <PropertyGroup>
     <!-- we're not building all of llvm for now in source build, just jittools -->
-    <BuildJitToolsOnly Condition="'$(BuildJitToolsOnly)' == '' and '$(DotNetBuildFromSource)' == 'true'">true</BuildJitToolsOnly>
+    <BuildJitToolsOnly Condition="'$(BuildJitToolsOnly)' == '' and '$(DotNetBuildSourceOnly)' == 'true'">true</BuildJitToolsOnly>
   </PropertyGroup>
 </Project>
